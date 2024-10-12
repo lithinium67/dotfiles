@@ -117,6 +117,8 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-alias git-repos='cd ~/dev/git-repos'
 alias repos='cd ~/dev/git-repos'
-alias cat='bat'
+alias cat='/bin/batcat'
+alias bat='/bin/batcat'
+alias dev='cd ~/dev'
+alias non-repos='cd ~/dev/non-repos'
