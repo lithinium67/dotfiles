@@ -4,6 +4,11 @@ set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set mouse=a
+
+let g:loaded_matchparen = 1
+
+runtime! ftplugin/man.vim
 
 nmap <C-n> : NERDTreeToggle<CR>
 
@@ -17,5 +22,6 @@ Plug 'https://github.com/itchyny/lightline.vim.git'
 
 Plug 'preservim/nerdtree'
 
-call plug#end()
+Plug 'jiangmiao/auto-piars'
 
+call plug#end()
