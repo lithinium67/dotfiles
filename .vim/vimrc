@@ -1,27 +1,32 @@
 syntax on
 set nu
+set relativenumber
 set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set mouse=a
+set modeline
 
 let g:loaded_matchparen = 1
 
-runtime! ftplugin/man.vim
+" -- Pluggins --
+
+let g:ale_sign_highlight_linenrs = 0
+set laststatus=2 " - nerdtree
 
 nmap <C-n> : NERDTreeToggle<CR>
 
-" -- Pluggins --
-
-set laststatus=2
-
 call plug#begin()
 
-Plug 'https://github.com/itchyny/lightline.vim.git'
+Plug 'itchyny/lightline.vim'
 
 Plug 'preservim/nerdtree'
 
-Plug 'jiangmiao/auto-piars'
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'dense-analysis/ale'
 
 call plug#end()
+
+source ~/.vim/plugins-config/ale/ale.vim
