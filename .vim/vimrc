@@ -8,11 +8,13 @@ set shiftwidth=4
 set mouse=a
 set modeline
 
+autocmd FileType haskell setlocal shiftwidth=2 softtabstop=2 expandtab " for Haskell Files
+
 let g:loaded_matchparen = 1
 
 " -- Pluggins --
 
-let g:ale_sign_highlight_linenrs = 0
+
 set laststatus=2 " - nerdtree
 
 nmap <C-n> : NERDTreeToggle<CR>
