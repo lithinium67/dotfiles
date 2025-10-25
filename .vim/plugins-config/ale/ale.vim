@@ -19,6 +19,8 @@ let g:ale_linters = {
 \   'haskell': ['hls']
 \}
 
+let g:ale_c_gcc_options = '-std=c99 -Wall -I./include -I../include'
+
 " Errors in Line with Comments
 let g:syntastic_enable_signs = 0
 let g:syntastic_echo_current_error = 1
