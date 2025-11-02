@@ -6,13 +6,13 @@ These are my Dotfiles, I keep updating them over time, idk
 
 To install the plugins, enter vim and run the command:
 
-```:PlugInstall```
+`:PlugInstall`
 
 > This Vim Config Use [Plug](https://github.com/junegunn/vim-plug)
 
 ### ALE
 
-in ´.vim/plugins-config/ale/ale.vim´ I configured to have some linters,
+in `.vim/plugins-config/ale/ale.vim` I configured to have some linters,
 this help me with the Syntaxis Errors in my code.
 
 I recently discovered that I can put LSP in the linters list
