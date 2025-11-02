@@ -5,6 +5,15 @@ let g:syntastic_check_on_wq = 0
 
 let g:ale_sign_highlight_linenrs = 0
 
+" Activa completado con ALE
+let g:ale_completion_enabled = 1
+
+" Usa el completado de ALE con C-n / C-p
+autocmd FileType * setlocal omnifunc=ale#completion#OmniFunc
+
+" (Opcional) Muestra sugerencias mientras escribes
+let g:ale_completion_autoimport = 1
+
 " Corre solo al guardar
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
@@ -16,7 +25,9 @@ let g:ale_linters = {
 \   'rust': ['cargo'],
 \   'elixir': ['mix'],
 \   'nasm': ['nasm'],
-\   'haskell': ['hls']
+\   'haskell': ['hls'],
+\   'lisp': ['sbcl'],
+\   'go': ['gopls']
 \}
 
 let g:ale_c_gcc_options = '-std=c99 -Wall -I./include -I../include'
