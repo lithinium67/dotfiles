@@ -21,16 +21,18 @@ let g:ale_lint_on_save = 1
 
 let g:ale_linters = {
 \   'c': ['gcc'],
-\   'java': ['javac'],
+\   'java': ["javalsp"],
 \   'rust': ['cargo'],
 \   'elixir': ['mix'],
 \   'nasm': ['nasm'],
 \   'haskell': ['hls'],
 \   'lisp': ['sbcl'],
-\   'go': ['gopls']
+\   'go': ['gopls', 'gofmt']
 \}
 
 let g:ale_c_gcc_options = '-std=c99 -Wall -I./include -I../include'
+
+let g:ale_java_javalsp_executable = 'jdtls'
 
 " Errors in Line with Comments
 let g:syntastic_enable_signs = 0
