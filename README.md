@@ -17,3 +17,8 @@ this help me with the Syntaxis Errors in my code.
 
 I recently discovered that I can put LSP in the linters list
 and use vim's built-in autocompletion (`C-n/C-p`) together.
+
+## LSP's
+
+Java: [eclipse.jdt.ls](https://github.com/eclipse-jdtls/eclipse.jdt.ls)
+Go: [Gopls](https://go.dev/gopls/)
